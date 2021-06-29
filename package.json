@@ -1,0 +1,19 @@
+{
+  "name": "@liuxsdev/utils",
+  "version": "0.1.0",
+  "description": "liuxs' utils",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuxsdev/utils.git"
+  },
+  "author": "liuxsdev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liuxsdev/utils/issues"
+  },
+  "homepage": "https://github.com/liuxsdev/utils#readme"
+}
