@@ -1,8 +1,8 @@
 {
   "name": "@liuxsdev/utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "liuxs' utils",
-  "main": "index.js",
+  "main": "dist/umd/index.js",
   "scripts": {
     "build": "rollup -c"
   },
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/liuxsdev/utils/issues"
   },
-  "homepage": "https://github.com/liuxsdev/utils#readme"
+  "homepage": "https://github.com/liuxsdev/utils#readme",
+  "devDependencies": {
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
 }
