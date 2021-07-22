@@ -1,5 +1,7 @@
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs'
+import { nodeResolve } from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+import { terser } from "rollup-plugin-terser";
+import filesize from 'rollup-plugin-filesize';
 
 const NAME = 'utils'
 
@@ -23,7 +25,13 @@ export default {
             name: NAME,
             file: 'dist/iife/index.js',
             format: 'iife'
+        },
+        {
+            name: NAME,
+            file: 'dist/iife/index.min.js',
+            format: 'iife',
+            plugins: [terser()]
         }
     ],
-    plugins: [commonjs(), resolve()],
+    plugins: [nodeResolve(), commonjs(), filesize()],
 };
