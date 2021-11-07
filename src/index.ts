@@ -16,7 +16,7 @@ function random_pick_from_array(arr: any[]) {
     return arr[random_number];
 }
 
-function random_pick_by_wight(arr: [], weight: []) {
+function random_pick_by_wight(arr: any[], weight: number[]) {
     // 根据权重来随机选择
     let r: any[] = [];
     let len = arr.length;
