@@ -1,12 +1,13 @@
 {
   "name": "@liuxsdev/utils",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "liuxs' utils",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "release": "tsc && npm publish"
   },
   "repository": {
     "type": "git",
