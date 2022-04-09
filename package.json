@@ -1,13 +1,19 @@
 {
   "name": "@liuxsdev/utils",
-  "version": "0.1.6",
+  "version": "0.2.1",
   "description": "liuxs' utils",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
-    "build": "tsc",
-    "release": "tsc && npm publish"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -20,6 +26,10 @@
   },
   "homepage": "https://github.com/liuxsdev/utils#readme",
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-typescript": "^8.3.1",
+    "rollup": "^2.70.1",
+    "tslib": "^2.3.1",
     "typescript": "^4.4.4"
   }
 }

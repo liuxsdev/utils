@@ -3,13 +3,14 @@
         "target": "esnext",
         "module": "esnext",
         "lib": ["ESNext"],
-        "declaration": true, // 生成 `.d.ts` 文件
-        // "declarationDir": ".",  //rollup下解决目录问题
+        "declaration": true,
+        "declarationDir": ".",
         "outDir": "dist",
         "strict": true,
         "esModuleInterop": true,
+        "moduleResolution": "node",
         "removeComments": true //删除注释
     },
-    "exclude": ["node_modules", "dist"],
-    "files": ["src/index.ts"]
+    "files": ["src/index.ts"],
+    "exclude": ["node_modules", "dist", "build"]
 }
